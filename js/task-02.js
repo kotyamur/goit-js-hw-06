@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
-const ingredientsList = document.querySelector('#ingredients');
+const ingredientsListEl = document.querySelector('#ingredients');
 
 const makeIngredientsItemsList = ingredientsObj => {
   return ingredientsObj.map(ingredient => {
@@ -18,4 +18,4 @@ const makeIngredientsItemsList = ingredientsObj => {
   });
 };
 const ingredientsItems = makeIngredientsItemsList(ingredients);
-ingredientsList.append(...ingredientsItems);
+ingredientsListEl.append(...ingredientsItems);
