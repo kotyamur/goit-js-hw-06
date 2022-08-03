@@ -19,4 +19,3 @@ const makeIngredientsItemsList = ingredientsObj => {
 };
 const ingredientsItems = makeIngredientsItemsList(ingredients);
 ingredientsList.append(...ingredientsItems);
-console.log(ingredientsList);
