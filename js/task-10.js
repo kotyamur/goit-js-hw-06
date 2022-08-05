@@ -19,6 +19,7 @@ numberInputEl.addEventListener('input', event => {
 });
 
 const createBoxes = amount => {
+  boxesCaseEl.innerHTML = '';
   const boxesArr = [];
 
   for (let index = 0; index < amount; index += 1) {
@@ -29,6 +30,7 @@ const createBoxes = amount => {
     boxesArr.push(box);
   }
   boxesCaseEl.append(...boxesArr);
+  
 };
 
 const destroyBoxes = () => {
